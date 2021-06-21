@@ -9,7 +9,7 @@ pipeline {
         stage('Cloning our Git') { 
              steps {  
                  
-                checkout([$class: 'GitSCM', branches: [[name: 'main']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '98a69b20-e09c-4c58-8654-69feb048011e', url: 'https://github.com/shashikantvermaji/test1.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'a029659e-1c58-48b1-b345-cad9542e933d', url: 'https://github.com/HarpreetSingh18/TestingX']]])
             }
             
          } 
