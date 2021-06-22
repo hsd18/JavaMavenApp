@@ -1,6 +1,6 @@
 pipeline {  
     environment { 
-        registry = "shashikantvermaji/java"  
+        registry = "hsd18/java"  
         registryCredential = 'docker'  
         dockerImage = '' 
     }
